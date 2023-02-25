@@ -25,6 +25,16 @@ public class v_menu extends javax.swing.JFrame {
     public void setLink_nuevousuario(JMenuItem link_nuevousuario) {
         this.link_nuevousuario = link_nuevousuario;
     }
+
+    public JMenuItem getLink_rolusuario() {
+        return link_rolusuario;
+    }
+
+    public void setLink_rolusuario(JMenuItem link_rolusuario) {
+        this.link_rolusuario = link_rolusuario;
+    }
+    
+    
     
     
 
@@ -47,12 +57,17 @@ public class v_menu extends javax.swing.JFrame {
         jMenu12 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
+        jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         sddfh = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
         link_nuevousuario = new javax.swing.JMenuItem();
-        jMenu1 = new javax.swing.JMenu();
+        aaaa = new javax.swing.JMenu();
+        link_rolusuario = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
@@ -79,6 +94,16 @@ public class v_menu extends javax.swing.JFrame {
         jMenuItem4.setText("jMenuItem4");
 
         jMenuItem5.setText("jMenuItem5");
+
+        jMenuItem3.setText("jMenuItem3");
+
+        jMenuItem7.setText("jMenuItem7");
+
+        jCheckBoxMenuItem1.setSelected(true);
+        jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
+
+        jRadioButtonMenuItem1.setSelected(true);
+        jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -113,8 +138,17 @@ public class v_menu extends javax.swing.JFrame {
 
         jMenuBar1.add(sddfh);
 
-        jMenu1.setText("Roles");
-        jMenuBar1.add(jMenu1);
+        aaaa.setText("Roles");
+
+        link_rolusuario.setText("Roles usuarios");
+        link_rolusuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                link_rolusuarioActionPerformed(evt);
+            }
+        });
+        aaaa.add(link_rolusuario);
+
+        jMenuBar1.add(aaaa);
 
         jMenu2.setText("Proveedor");
         jMenuBar1.add(jMenu2);
@@ -158,9 +192,14 @@ public class v_menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
+    private void link_rolusuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_link_rolusuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_link_rolusuarioActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu aaaa;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JDesktopPane jDesktopPane1;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
@@ -175,10 +214,14 @@ public class v_menu extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
     private javax.swing.JMenuItem link_nuevousuario;
+    private javax.swing.JMenuItem link_rolusuario;
     private javax.swing.JMenu link_salir;
     private javax.swing.JMenu sddfh;
     // End of variables declaration//GEN-END:variables
