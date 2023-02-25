@@ -18,22 +18,13 @@ public class v_menu extends javax.swing.JFrame {
      initComponents();
     }
 
-    public JMenu getLink_nuevousuario() {
+    public JMenuItem getLink_nuevousuario() {
         return link_nuevousuario;
     }
 
-    public void setLink_nuevousuario(JMenu link_nuevousuario) {
+    public void setLink_nuevousuario(JMenuItem link_nuevousuario) {
         this.link_nuevousuario = link_nuevousuario;
     }
-
-    public JMenu getLink_salir() {
-        return link_salir;
-    }
-
-    public void setLink_salir(JMenu link_salir) {
-        this.link_salir = link_salir;
-    }
-    
     
     
 
@@ -54,11 +45,13 @@ public class v_menu extends javax.swing.JFrame {
         jMenu9 = new javax.swing.JMenu();
         jMenu11 = new javax.swing.JMenu();
         jMenu12 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
-        link_nuevousuario = new javax.swing.JMenu();
+        sddfh = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        link_nuevousuario = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
@@ -83,20 +76,24 @@ public class v_menu extends javax.swing.JFrame {
 
         jMenu12.setText("jMenu12");
 
+        jMenuItem4.setText("jMenuItem4");
+
+        jMenuItem5.setText("jMenuItem5");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
         jDesktopPane1Layout.setHorizontalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 595, Short.MAX_VALUE)
+            .addGap(0, 682, Short.MAX_VALUE)
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 330, Short.MAX_VALUE)
         );
 
-        link_nuevousuario.setText("Usuarios");
+        sddfh.setText("Usuarios");
 
         jMenuItem6.setText("Lista de Usuarios");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
@@ -104,12 +101,17 @@ public class v_menu extends javax.swing.JFrame {
                 jMenuItem6ActionPerformed(evt);
             }
         });
-        link_nuevousuario.add(jMenuItem6);
+        sddfh.add(jMenuItem6);
 
-        jMenuItem3.setText("Nuevo usuario");
-        link_nuevousuario.add(jMenuItem3);
+        link_nuevousuario.setText("Nuevo usuario");
+        link_nuevousuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                link_nuevousuarioActionPerformed(evt);
+            }
+        });
+        sddfh.add(link_nuevousuario);
 
-        jMenuBar1.add(link_nuevousuario);
+        jMenuBar1.add(sddfh);
 
         jMenu1.setText("Roles");
         jMenuBar1.add(jMenu1);
@@ -147,6 +149,11 @@ public class v_menu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void link_nuevousuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_link_nuevousuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_link_nuevousuarioActionPerformed
+
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem6ActionPerformed
@@ -168,9 +175,11 @@ public class v_menu extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenu link_nuevousuario;
+    private javax.swing.JMenuItem link_nuevousuario;
     private javax.swing.JMenu link_salir;
+    private javax.swing.JMenu sddfh;
     // End of variables declaration//GEN-END:variables
 }

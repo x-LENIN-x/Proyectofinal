@@ -16,7 +16,6 @@ public class c_menu {
         vista.setVisible(true);
         this.vista.setLocationRelativeTo(null);
         this.vista.getLink_nuevousuario().addActionListener(e->mostrarNuevoUsuario());
-        this.vista.getLink_salir().addActionListener(e->salir());
 
 
         
