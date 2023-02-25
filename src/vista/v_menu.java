@@ -1,6 +1,7 @@
 
 package vista;
 
+import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
 /**
@@ -17,13 +18,14 @@ public class v_menu extends javax.swing.JFrame {
      initComponents();
     }
 
-   // public JMenuItem getLinkPedido() {
-     //   return linkPedido;
-    //}
+    public JMenu getLink_nuevousuario() {
+        return link_nuevousuario;
+    }
 
-    //public void setLinkPedido(JMenuItem linkPedido) {
-     //   this.linkPedido = linkPedido;
-    //}
+    public void setLink_nuevousuario(JMenu link_nuevousuario) {
+        this.link_nuevousuario = link_nuevousuario;
+    }
+    
     
     
 
@@ -46,7 +48,7 @@ public class v_menu extends javax.swing.JFrame {
         jMenu12 = new javax.swing.JMenu();
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu10 = new javax.swing.JMenu();
+        link_nuevousuario = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
@@ -86,7 +88,7 @@ public class v_menu extends javax.swing.JFrame {
             .addGap(0, 330, Short.MAX_VALUE)
         );
 
-        jMenu10.setText("Usuarios");
+        link_nuevousuario.setText("Usuarios");
 
         jMenuItem6.setText("Lista de Usuarios");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
@@ -94,12 +96,12 @@ public class v_menu extends javax.swing.JFrame {
                 jMenuItem6ActionPerformed(evt);
             }
         });
-        jMenu10.add(jMenuItem6);
+        link_nuevousuario.add(jMenuItem6);
 
         jMenuItem3.setText("Nuevo usuario");
-        jMenu10.add(jMenuItem3);
+        link_nuevousuario.add(jMenuItem3);
 
-        jMenuBar1.add(jMenu10);
+        jMenuBar1.add(link_nuevousuario);
 
         jMenu1.setText("Roles");
         jMenuBar1.add(jMenu1);
@@ -144,7 +146,6 @@ public class v_menu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
@@ -162,5 +163,6 @@ public class v_menu extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenu link_nuevousuario;
     // End of variables declaration//GEN-END:variables
 }

@@ -59,7 +59,7 @@
     </Container>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
-        <Menu class="javax.swing.JMenu" name="jMenu10">
+        <Menu class="javax.swing.JMenu" name="link_nuevousuario">
           <Properties>
             <Property name="text" type="java.lang.String" value="Usuarios"/>
           </Properties>

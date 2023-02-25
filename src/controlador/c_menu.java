@@ -8,10 +8,6 @@ package controlador;
 import vista.*;
 import controlador.*;
 
-/**
- *
- * @author PC01
- */
 public class c_menu {
      public static v_menu vista;
 
@@ -19,14 +15,13 @@ public class c_menu {
         this.vista = menu;
         vista.setVisible(true);
         this.vista.setLocationRelativeTo(null);
-       // this.vista.getLinkPedido().addActionListener(e->mostrarMesero());
+        this.vista.getLink_nuevousuario().addActionListener(e->mostrarNuevoUsuario());
 
         
     }
-    
-    public void mostrarMesero(){
-          v_mesero vista = new v_mesero();
-          c_mesero co = new c_mesero(vista);
+    private void mostrarNuevoUsuario() {
+        V_usuario usuario=new V_usuario();
+        c_usuario cusu=new c_usuario(usuario);
     }
             
 }

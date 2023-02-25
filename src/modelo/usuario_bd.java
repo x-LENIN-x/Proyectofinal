@@ -12,9 +12,10 @@ import java.util.logging.Logger;
 public class usuario_bd extends usuario_mb{
     Conect conectar = new Conect();
 
-    public usuario_bd(int codigo, String cedula, String nombre, String password, int rol, int estado) {
+    public usuario_bd(int codigo, String cedula, String nombre, String password, int rol, String estado) {
         super(codigo, cedula, nombre, password, rol, estado);
     }
+
 
     public usuario_bd() {
     }
@@ -34,7 +35,7 @@ public class usuario_bd extends usuario_mb{
                 user.setNombre(rs.getString("nombre"));
                 user.setPassword(rs.getString("clave"));
                 user.setRol(rs.getInt("rol"));
-                user.setEstado(rs.getInt("estado"));
+                user.setEstado(rs.getString("estado"));
 
                 lista.add(user);
             }
