@@ -109,7 +109,7 @@
             <Property name="text" type="java.lang.String" value="Empleados"/>
           </Properties>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu7">
+        <Menu class="javax.swing.JMenu" name="link_salir">
           <Properties>
             <Property name="text" type="java.lang.String" value="Salir"/>
           </Properties>

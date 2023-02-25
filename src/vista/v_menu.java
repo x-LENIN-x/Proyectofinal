@@ -25,6 +25,14 @@ public class v_menu extends javax.swing.JFrame {
     public void setLink_nuevousuario(JMenu link_nuevousuario) {
         this.link_nuevousuario = link_nuevousuario;
     }
+
+    public JMenu getLink_salir() {
+        return link_salir;
+    }
+
+    public void setLink_salir(JMenu link_salir) {
+        this.link_salir = link_salir;
+    }
     
     
     
@@ -57,7 +65,7 @@ public class v_menu extends javax.swing.JFrame {
         jMenu6 = new javax.swing.JMenu();
         jMenu8 = new javax.swing.JMenu();
         jMenu13 = new javax.swing.JMenu();
-        jMenu7 = new javax.swing.JMenu();
+        link_salir = new javax.swing.JMenu();
 
         jMenu3.setText("jMenu3");
 
@@ -121,8 +129,8 @@ public class v_menu extends javax.swing.JFrame {
         jMenu13.setText("Empleados");
         jMenuBar1.add(jMenu13);
 
-        jMenu7.setText("Salir");
-        jMenuBar1.add(jMenu7);
+        link_salir.setText("Salir");
+        jMenuBar1.add(link_salir);
 
         setJMenuBar(jMenuBar1);
 
@@ -154,7 +162,6 @@ public class v_menu extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
-    private javax.swing.JMenu jMenu7;
     private javax.swing.JMenu jMenu8;
     private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
@@ -164,5 +171,6 @@ public class v_menu extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenu link_nuevousuario;
+    private javax.swing.JMenu link_salir;
     // End of variables declaration//GEN-END:variables
 }

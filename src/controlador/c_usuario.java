@@ -1,7 +1,7 @@
 
 package controlador;
 
-import static controlador.c_inicio.vista;
+import  controlador.*;
 import vista.*;
 
 public class c_usuario {
