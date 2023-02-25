@@ -18,7 +18,7 @@ public class c_menu {
         this.vista.getLink_nuevousuario().addActionListener(e->mostrarNuevoUsuario());
         this.vista.getLink_rolusuario().addActionListener(e->roles());
 
-
+        
         
     }
     private void mostrarNuevoUsuario() {

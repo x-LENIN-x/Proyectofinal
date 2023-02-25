@@ -25,6 +25,16 @@ public class V_usuario extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getBtnImprimir() {
+        return btnImprimir;
+    }
+
+    public void setBtnImprimir(JButton btnImprimir) {
+        this.btnImprimir = btnImprimir;
+    }
+    
+    
+
     public JButton getBtn_buscar() {
         return btn_buscar;
     }
@@ -256,6 +266,7 @@ public class V_usuario extends javax.swing.JFrame {
         btn_cargarfoto = new javax.swing.JButton();
         btn_rol = new javax.swing.JButton();
         btn_salir = new javax.swing.JLabel();
+        btnImprimir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -311,6 +322,8 @@ public class V_usuario extends javax.swing.JFrame {
 
         btn_salir.setText("Salir");
 
+        btnImprimir.setText("Imprimir");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -351,6 +364,8 @@ public class V_usuario extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btn_eliminar)
+                        .addGap(73, 73, 73)
+                        .addComponent(btnImprimir)
                         .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -432,7 +447,8 @@ public class V_usuario extends javax.swing.JFrame {
                     .addComponent(btn_nuevo)
                     .addComponent(btn_guardar)
                     .addComponent(btn_modificar)
-                    .addComponent(btn_eliminar))
+                    .addComponent(btn_eliminar)
+                    .addComponent(btnImprimir))
                 .addGap(18, 18, 18)
                 .addComponent(btn_rol)
                 .addContainerGap(182, Short.MAX_VALUE))
@@ -458,6 +474,7 @@ public class V_usuario extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnImprimir;
     private javax.swing.JButton btn_buscar;
     private javax.swing.JButton btn_cargarfoto;
     private javax.swing.JButton btn_eliminar;
