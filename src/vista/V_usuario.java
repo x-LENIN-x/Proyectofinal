@@ -25,6 +25,22 @@ public class V_usuario extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getBtnEliminar() {
+        return btnEliminar;
+    }
+
+    public void setBtnEliminar(JButton btnEliminar) {
+        this.btnEliminar = btnEliminar;
+    }
+
+    public JButton getBtnGuardar() {
+        return btnGuardar;
+    }
+
+    public void setBtnGuardar(JButton btnGuardar) {
+        this.btnGuardar = btnGuardar;
+    }
+
     public JButton getBtnImprimir() {
         return btnImprimir;
     }
@@ -32,58 +48,42 @@ public class V_usuario extends javax.swing.JFrame {
     public void setBtnImprimir(JButton btnImprimir) {
         this.btnImprimir = btnImprimir;
     }
-    
-    
 
-    public JButton getBtn_buscar() {
-        return btn_buscar;
+
+
+    public JButton getBtnModificar() {
+        return btnModificar;
     }
 
-    public void setBtn_buscar(JButton btn_buscar) {
-        this.btn_buscar = btn_buscar;
+    public void setBtnModificar(JButton btnModificar) {
+        this.btnModificar = btnModificar;
+    }
+
+    public JButton getBtnNuevo() {
+        return btnNuevo;
+    }
+
+    public void setBtnNuevo(JButton btnNuevo) {
+        this.btnNuevo = btnNuevo;
+    }
+
+    public JButton getBtnRol() {
+        return btnRol;
+    }
+
+    public void setBtnRol(JButton btnRol) {
+        this.btnRol = btnRol;
+    }
+
+    public JButton getBtnBuscar() {
+        return btnBuscar;
+    }
+
+    public void setBtnBuscar(JButton btnBuscar) {
+        this.btnBuscar = btnBuscar;
     }
 
    
-
-    public JButton getBtn_eliminar() {
-        return btn_eliminar;
-    }
-
-    public void setBtn_eliminar(JButton btn_eliminar) {
-        this.btn_eliminar = btn_eliminar;
-    }
-
-    public JButton getBtn_guardar() {
-        return btn_guardar;
-    }
-
-    public void setBtn_guardar(JButton btn_guardar) {
-        this.btn_guardar = btn_guardar;
-    }
-
-    public JButton getBtn_modificar() {
-        return btn_modificar;
-    }
-
-    public void setBtn_modificar(JButton btn_modificar) {
-        this.btn_modificar = btn_modificar;
-    }
-
-    public JButton getBtn_nuevo() {
-        return btn_nuevo;
-    }
-
-    public void setBtn_nuevo(JButton btn_nuevo) {
-        this.btn_nuevo = btn_nuevo;
-    }
-
-    public JButton getBtn_rol() {
-        return btn_rol;
-    }
-
-    public void setBtn_rol(JButton btn_rol) {
-        this.btn_rol = btn_rol;
-    }
 
     public JLabel getBtn_salir() {
         return btn_salir;
@@ -93,20 +93,20 @@ public class V_usuario extends javax.swing.JFrame {
         this.btn_salir = btn_salir;
     }
 
-    public JComboBox<String> getCb_estado() {
-        return cb_estado;
+    public JComboBox<String> getCbEstado() {
+        return cbEstado;
     }
 
-    public void setCb_estado(JComboBox<String> cb_estado) {
-        this.cb_estado = cb_estado;
+    public void setCbEstado(JComboBox<String> cbEstado) {
+        this.cbEstado = cbEstado;
     }
 
-    public JComboBox<String> getCb_rol() {
-        return cb_rol;
+    public JComboBox<String> getCbRol() {
+        return cbRol;
     }
 
-    public void setCb_rol(JComboBox<String> cb_rol) {
-        this.cb_rol = cb_rol;
+    public void setCbRol(JComboBox<String> cbRol) {
+        this.cbRol = cbRol;
     }
 
     public JLabel getjLabel1() {
@@ -116,8 +116,6 @@ public class V_usuario extends javax.swing.JFrame {
     public void setjLabel1(JLabel jLabel1) {
         this.jLabel1 = jLabel1;
     }
-
-
 
     public JLabel getjLabel3() {
         return jLabel3;
@@ -151,6 +149,14 @@ public class V_usuario extends javax.swing.JFrame {
         this.jLabel6 = jLabel6;
     }
 
+    public JLabel getjLabel7() {
+        return jLabel7;
+    }
+
+    public void setjLabel7(JLabel jLabel7) {
+        this.jLabel7 = jLabel7;
+    }
+
     public JPanel getjPanel1() {
         return jPanel1;
     }
@@ -167,14 +173,36 @@ public class V_usuario extends javax.swing.JFrame {
         this.jScrollPane1 = jScrollPane1;
     }
 
-
-
-    public JTable getTbl_usuario() {
-        return tbl_usuario;
+    public JTable getTabla() {
+        return tabla;
     }
 
-    public void setTbl_usuario(JTable tbl_usuario) {
-        this.tbl_usuario = tbl_usuario;
+    public void setTabla(JTable tabla) {
+        this.tabla = tabla;
+    }
+
+    public JTextField getTxtCedula() {
+        return txtCedula;
+    }
+
+    public void setTxtCedula(JTextField txtCedula) {
+        this.txtCedula = txtCedula;
+    }
+
+    public JPasswordField getTxtPassword() {
+        return txtPassword;
+    }
+
+    public void setTxtPassword(JPasswordField txtPassword) {
+        this.txtPassword = txtPassword;
+    }
+
+    public JTextField getTxtUsuario() {
+        return txtUsuario;
+    }
+
+    public void setTxtUsuario(JTextField txtUsuario) {
+        this.txtUsuario = txtUsuario;
     }
 
     public JTextField getTxt_buscar() {
@@ -185,31 +213,11 @@ public class V_usuario extends javax.swing.JFrame {
         this.txt_buscar = txt_buscar;
     }
 
-    public JTextField getTxt_cedula() {
-        return txt_cedula;
-    }
-
-    public void setTxt_cedula(JTextField txt_cedula) {
-        this.txt_cedula = txt_cedula;
-    }
-
-    public JPasswordField getTxt_clave() {
-        return txt_clave;
-    }
-
-    public void setTxt_clave(JPasswordField txt_clave) {
-        this.txt_clave = txt_clave;
-    }
+   
 
 
 
-    public JTextField getTxt_usuario() {
-        return txt_usuario;
-    }
-
-    public void setTxt_usuario(JTextField txt_usuario) {
-        this.txt_usuario = txt_usuario;
-    }
+   
     
     
     
@@ -223,20 +231,20 @@ public class V_usuario extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        btn_guardar = new javax.swing.JButton();
-        btn_eliminar = new javax.swing.JButton();
-        btn_nuevo = new javax.swing.JButton();
-        btn_modificar = new javax.swing.JButton();
-        txt_clave = new javax.swing.JPasswordField();
-        txt_cedula = new javax.swing.JTextField();
-        txt_usuario = new javax.swing.JTextField();
+        btnGuardar = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
+        btnNuevo = new javax.swing.JButton();
+        btnModificar = new javax.swing.JButton();
+        txtPassword = new javax.swing.JPasswordField();
+        txtCedula = new javax.swing.JTextField();
+        txtUsuario = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tbl_usuario = new javax.swing.JTable();
+        tabla = new javax.swing.JTable();
         txt_buscar = new javax.swing.JTextField();
-        btn_buscar = new javax.swing.JButton();
-        cb_estado = new javax.swing.JComboBox<>();
-        cb_rol = new javax.swing.JComboBox<>();
-        btn_rol = new javax.swing.JButton();
+        btnBuscar = new javax.swing.JButton();
+        cbEstado = new javax.swing.JComboBox<>();
+        cbRol = new javax.swing.JComboBox<>();
+        btnRol = new javax.swing.JButton();
         btn_salir = new javax.swing.JLabel();
         btnImprimir = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
@@ -253,26 +261,26 @@ public class V_usuario extends javax.swing.JFrame {
 
         jLabel6.setText("Contraseña");
 
-        btn_guardar.setText("GUARDAR");
+        btnGuardar.setText("GUARDAR");
 
-        btn_eliminar.setText("ELIMINAR");
+        btnEliminar.setText("ELIMINAR");
 
-        btn_nuevo.setText("NUEVO");
+        btnNuevo.setText("NUEVO");
 
-        btn_modificar.setText("MODIFICAR");
+        btnModificar.setText("MODIFICAR");
 
-        tbl_usuario.setModel(new javax.swing.table.DefaultTableModel(
+        tabla.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "CODIGO", "CEDULA", "USUARIO", "CONTRASEÑA", "ROL", "ESTADO"
+                "CEDULA", "USUARIO", "CONTRASEÑA", "ROL", "ESTADO"
             }
         ));
-        jScrollPane1.setViewportView(tbl_usuario);
+        jScrollPane1.setViewportView(tabla);
 
         txt_buscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -280,11 +288,13 @@ public class V_usuario extends javax.swing.JFrame {
             }
         });
 
-        btn_buscar.setText("BUSCAR");
+        btnBuscar.setText("BUSCAR");
 
-        cb_estado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ACTIVO", "INACTIVO", " " }));
+        cbEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ACTIVO", "INACTIVO", " " }));
 
-        btn_rol.setText("ROL");
+        cbRol.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "------------------------" }));
+
+        btnRol.setText("ROL");
 
         btn_salir.setText("Salir");
 
@@ -317,36 +327,36 @@ public class V_usuario extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(cb_estado, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txt_clave, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txt_usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(cb_rol, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(cbEstado, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cbRol, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txt_buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 506, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addContainerGap(193, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(txt_cedula, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtCedula, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn_buscar)
+                                .addComponent(btnBuscar)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn_nuevo)
+                                .addComponent(btnNuevo)
                                 .addGap(18, 18, 18)
-                                .addComponent(btn_guardar)
+                                .addComponent(btnGuardar)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn_modificar)
+                                .addComponent(btnModificar)
                                 .addGap(31, 31, 31)
-                                .addComponent(btn_eliminar)
+                                .addComponent(btnEliminar)
                                 .addGap(39, 39, 39)
                                 .addComponent(btnImprimir)
-                                .addGap(30, 30, 30)
-                                .addComponent(btn_rol))
+                                .addGap(18, 18, 18)
+                                .addComponent(btnRol))
                             .addComponent(jLabel1))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGap(0, 472, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -357,8 +367,8 @@ public class V_usuario extends javax.swing.JFrame {
                         .addGap(68, 68, 68)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
-                            .addComponent(txt_cedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn_buscar)))
+                            .addComponent(txtCedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnBuscar)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(33, 33, 33)
                         .addComponent(jLabel7)))
@@ -367,24 +377,20 @@ public class V_usuario extends javax.swing.JFrame {
                         .addGap(28, 28, 28)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
-                            .addComponent(txt_usuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(29, 29, 29)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel6)
-                            .addComponent(txt_clave, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel4)
-                                .addGap(28, 28, 28)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel5)
-                                    .addComponent(cb_estado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(23, 23, 23))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(36, 36, 36)
-                                .addComponent(cb_rol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(cbRol, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(28, 28, 28)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel5)
+                            .addComponent(cbEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(23, 23, 23))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(txt_buscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -392,12 +398,12 @@ public class V_usuario extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(66, 66, 66)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_nuevo)
-                    .addComponent(btn_guardar)
-                    .addComponent(btn_modificar)
-                    .addComponent(btn_eliminar)
+                    .addComponent(btnNuevo)
+                    .addComponent(btnGuardar)
+                    .addComponent(btnModificar)
+                    .addComponent(btnEliminar)
                     .addComponent(btnImprimir)
-                    .addComponent(btn_rol))
+                    .addComponent(btnRol))
                 .addContainerGap(268, Short.MAX_VALUE))
         );
 
@@ -423,16 +429,16 @@ public class V_usuario extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBuscar;
+    private javax.swing.JButton btnEliminar;
+    private javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnImprimir;
-    private javax.swing.JButton btn_buscar;
-    private javax.swing.JButton btn_eliminar;
-    private javax.swing.JButton btn_guardar;
-    private javax.swing.JButton btn_modificar;
-    private javax.swing.JButton btn_nuevo;
-    private javax.swing.JButton btn_rol;
+    private javax.swing.JButton btnModificar;
+    private javax.swing.JButton btnNuevo;
+    private javax.swing.JButton btnRol;
     private javax.swing.JLabel btn_salir;
-    private javax.swing.JComboBox<String> cb_estado;
-    private javax.swing.JComboBox<String> cb_rol;
+    private javax.swing.JComboBox<String> cbEstado;
+    private javax.swing.JComboBox<String> cbRol;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -441,10 +447,10 @@ public class V_usuario extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tbl_usuario;
+    private javax.swing.JTable tabla;
+    private javax.swing.JTextField txtCedula;
+    private javax.swing.JPasswordField txtPassword;
+    private javax.swing.JTextField txtUsuario;
     private javax.swing.JTextField txt_buscar;
-    private javax.swing.JTextField txt_cedula;
-    private javax.swing.JPasswordField txt_clave;
-    private javax.swing.JTextField txt_usuario;
     // End of variables declaration//GEN-END:variables
 }

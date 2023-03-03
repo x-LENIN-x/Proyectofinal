@@ -23,7 +23,7 @@ public class c_menu {
     }
     private void mostrarNuevoUsuario() {
         V_usuario usuario=new V_usuario();
-        c_usuario cusu=new c_usuario(usuario);
+        C_usuario cusu=new C_usuario(usuario);
     }
 
     private void salir() {
@@ -32,8 +32,8 @@ public class c_menu {
     }
 
     private void roles() {
-        v_rol rol=new v_rol();
-        c_rol r=new c_rol(rol);
+        V_rol rol=new V_rol();
+        C_rol r=new C_rol(rol);
     }
             
 }
