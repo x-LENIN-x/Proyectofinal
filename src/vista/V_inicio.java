@@ -16,12 +16,12 @@ import javax.swing.JTextField;
  *
  * @author lenin
  */
-public class v_incio extends javax.swing.JFrame {
+public class V_inicio extends javax.swing.JFrame {
 
     /**
      * Creates new form v_incio
      */
-    public v_incio() {
+    public V_inicio() {
         initComponents();
     }
 

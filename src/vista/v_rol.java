@@ -9,9 +9,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 
-public class V_rol extends javax.swing.JFrame {
+public class v_rol extends javax.swing.JFrame {
 
-    public V_rol() {
+    public v_rol() {
         initComponents();
     }
 

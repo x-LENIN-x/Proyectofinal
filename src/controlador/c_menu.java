@@ -16,7 +16,7 @@ public class c_menu {
         vista.setVisible(true);
         this.vista.setLocationRelativeTo(null);
         this.vista.getLink_nuevousuario().addActionListener(e->mostrarNuevoUsuario());
-        this.vista.getLink_rolusuario().addActionListener(e->roles());
+        
 
         
         
@@ -27,13 +27,10 @@ public class c_menu {
     }
 
     private void salir() {
-        v_incio ini=new v_incio();
-        c_inicio in=new c_inicio(ini);
+        V_inicio ini=new V_inicio();
+        C_inicio in=new C_inicio(ini);
     }
 
-    private void roles() {
-        V_rol rol=new V_rol();
-        C_rol r=new C_rol(rol);
-    }
+
             
 }
