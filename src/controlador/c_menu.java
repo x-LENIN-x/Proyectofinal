@@ -16,19 +16,19 @@ public class c_menu {
         vista.setVisible(true);
         this.vista.setLocationRelativeTo(null);
         this.vista.getLink_nuevousuario().addActionListener(e->mostrarNuevoUsuario());
-        
+       // this.vista.getVentanaUsuario()
 
         
         
     }
     private void mostrarNuevoUsuario() {
         V_usuario usuario=new V_usuario();
-        C_usuario cusu=new C_usuario(usuario);
+        c_usuario cusu=new c_usuario(usuario);
     }
 
     private void salir() {
         V_inicio ini=new V_inicio();
-        C_inicio in=new C_inicio(ini);
+        c_inicio in=new c_inicio(ini);
     }
 
 

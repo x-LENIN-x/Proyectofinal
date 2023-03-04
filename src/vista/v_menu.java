@@ -22,6 +22,16 @@ public class v_menu extends javax.swing.JFrame {
         return link_nuevousuario;
     }
 
+    public JMenu getVentanaUsuario() {
+        return ventanaUsuario;
+    }
+
+    public void setVentanaUsuario(JMenu ventanaUsuario) {
+        this.ventanaUsuario = ventanaUsuario;
+    }
+    
+    
+
     public void setLink_nuevousuario(JMenuItem link_nuevousuario) {
         this.link_nuevousuario = link_nuevousuario;
     }
@@ -63,7 +73,7 @@ public class v_menu extends javax.swing.JFrame {
         jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
         jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        sddfh = new javax.swing.JMenu();
+        ventanaUsuario = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
         link_nuevousuario = new javax.swing.JMenuItem();
         aaaa = new javax.swing.JMenu();
@@ -110,7 +120,7 @@ public class v_menu extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ooooo.jpg"))); // NOI18N
         jLabel2.setToolTipText("");
 
-        sddfh.setText("Usuarios");
+        ventanaUsuario.setText("Usuarios");
 
         jMenuItem6.setText("Lista de Usuarios");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
@@ -118,7 +128,7 @@ public class v_menu extends javax.swing.JFrame {
                 jMenuItem6ActionPerformed(evt);
             }
         });
-        sddfh.add(jMenuItem6);
+        ventanaUsuario.add(jMenuItem6);
 
         link_nuevousuario.setText("Nuevo usuario");
         link_nuevousuario.addActionListener(new java.awt.event.ActionListener() {
@@ -126,9 +136,9 @@ public class v_menu extends javax.swing.JFrame {
                 link_nuevousuarioActionPerformed(evt);
             }
         });
-        sddfh.add(link_nuevousuario);
+        ventanaUsuario.add(link_nuevousuario);
 
-        jMenuBar1.add(sddfh);
+        jMenuBar1.add(ventanaUsuario);
 
         aaaa.setText("Roles");
 
@@ -215,6 +225,6 @@ public class v_menu extends javax.swing.JFrame {
     private javax.swing.JMenuItem link_nuevousuario;
     private javax.swing.JMenuItem link_rolusuario;
     private javax.swing.JMenu link_salir;
-    private javax.swing.JMenu sddfh;
+    private javax.swing.JMenu ventanaUsuario;
     // End of variables declaration//GEN-END:variables
 }

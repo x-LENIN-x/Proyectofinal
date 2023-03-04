@@ -13,6 +13,6 @@ import controlador.*;
 public class Main {
     public static void main(String[] args) {
         V_inicio v=new V_inicio();
-        C_inicio c=new C_inicio(v);
+        c_inicio c=new c_inicio(v);
     }
 }
