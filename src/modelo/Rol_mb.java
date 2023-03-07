@@ -13,13 +13,13 @@ public class Rol_mb {
     private int codigo;
     private String nombre;
     private String descripcion;
-    private int codigo_permiso;
+    private String permiso;
 
-    public Rol_mb(int codigo, String nombre, String descripcion, int codigo_permiso) {
+    public Rol_mb(int codigo, String nombre, String descripcion, String permiso) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.codigo_permiso = codigo_permiso;
+        this.permiso =permiso;
     }
 
     public Rol_mb() {
@@ -49,12 +49,12 @@ public class Rol_mb {
         this.descripcion = descripcion;
     }
 
-    public int getCodigo_permiso() {
-        return codigo_permiso;
+    public String getPermiso() {
+        return permiso;
     }
 
-    public void setCodigo_permiso(int codigo_permiso) {
-        this.codigo_permiso = codigo_permiso;
+    public void setPermiso(String permiso) {
+        this.permiso = permiso;
     }
     
     

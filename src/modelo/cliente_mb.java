@@ -1,34 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package modelo;
 
-import java.awt.Image;
-
-/**
- *
- * @author PC
- */
-public class Persona_mb {
+public class cliente_mb {
+    private int codigo;
     private String cedula;
     private String nombre;
     private String apellido;
     private String direccion;
-    private String email;
-    private Image foto;
+    private String telefono;
 
-    public Persona_mb(String cedula, String nombre, String apellido, String direccion, String email, Image foto) {
+    public cliente_mb() {
+    }
+
+    public cliente_mb(int codigo, String cedula, String nombre, String apellido, String direccion, String telefono) {
+        this.codigo = codigo;
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;
-        this.email = email;
-        this.foto = foto;
+        this.telefono = telefono;
     }
 
-    public Persona_mb() {
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
     public String getCedula() {
@@ -63,21 +60,14 @@ public class Persona_mb {
         this.direccion = direccion;
     }
 
-    public String getEmail() {
-        return email;
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
-
-    public Image getFoto() {
-        return foto;
-    }
-
-    public void setFoto(Image foto) {
-        this.foto = foto;
-    }
+    
     
     
 }

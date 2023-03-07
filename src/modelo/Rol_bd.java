@@ -20,9 +20,11 @@ import javax.swing.JOptionPane;
 public class Rol_bd extends Rol_mb {
     Conect conectar = new Conect();
 
-    public Rol_bd(int codigo, String nombre, String descripcion, int codigo_permiso) {
-        super(codigo, nombre, descripcion, codigo_permiso);
+    public Rol_bd(int codigo, String nombre, String descripcion, String permiso) {
+        super(codigo, nombre, descripcion, permiso);
     }
+
+  
 
     public Rol_bd() {
     }
@@ -39,7 +41,7 @@ public class Rol_bd extends Rol_mb {
                 rol.setCodigo(rs.getInt("codigo"));
                 rol.setNombre(rs.getString("nombre"));
                 rol.setDescripcion(rs.getString("descripcion"));
-                rol.setCodigo_permiso(rs.getInt("codigo_permiso"));
+                rol.setPermiso(rs.getString("permiso"));
 
 
                 lista.add(rol);
@@ -53,12 +55,12 @@ public class Rol_bd extends Rol_mb {
     }//Fin mostrar datos
       
      public boolean insertar() {
-        String sql = "INSERT INTO rol(codigo,nombre,descripcion,codigo_permiso)"
+        String sql = "INSERT INTO rol(codigo,nombre,descripcion,permiso)"
                 + "VALUES ('"
                 + getCodigo() + "','"
                 + getNombre() + "','"
                 + getDescripcion() + "','"
-                + getCodigo_permiso() + "')";
+                + getPermiso() + "')";
 
         if (conectar.noQuery(sql) == null) {
             return true;
@@ -73,7 +75,7 @@ public class Rol_bd extends Rol_mb {
                 + "codigo = '" + getCodigo() + "', "
                 + "nombre = '" + getNombre() + "', "
                 + "descripcion = '" + getDescripcion()+ "', "
-                + "codigo_permiso = '" + getCodigo_permiso() + "' "
+                + "permiso = '" + getPermiso() + "' "
                 + " Where codigo = '" + getCodigo() + "'";
 
         if (conectar.noQuery(sql) == null) {
@@ -110,7 +112,7 @@ public class Rol_bd extends Rol_mb {
                 rol.setCodigo(rs.getInt("codigo"));
                 rol.setNombre(rs.getString("nombre"));
                 rol.setDescripcion(rs.getString("descripcion"));
-                rol.setCodigo_permiso(rs.getInt("codigo_permiso"));
+                rol.setPermiso(rs.getString("permiso"));
 
 
                 lista.add(rol);
@@ -141,7 +143,7 @@ public class Rol_bd extends Rol_mb {
                 rol.setCodigo(rs.getInt("codigo"));
                 rol.setNombre(rs.getString("nombre"));
                 rol.setDescripcion(rs.getString("descripcion"));
-                rol.setCodigo_permiso(rs.getInt("codigo_permiso"));
+                rol.setPermiso(rs.getString("permiso"));
 
 
                 lista.add(rol);
@@ -166,7 +168,7 @@ public class Rol_bd extends Rol_mb {
                 rol.setCodigo(rs.getInt("codigo"));
                 rol.setNombre(rs.getString("nombre"));
                 rol.setDescripcion(rs.getString("descripcion"));
-                rol.setCodigo_permiso(rs.getInt("codigo_permiso"));
+                rol.setPermiso(rs.getString("permiso"));
 
 
                 lista.add(rol);

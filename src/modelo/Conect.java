@@ -21,9 +21,9 @@ public class Conect {
     //String pgContra="2204";
     
     //********************** CONEXION A HEROCU  ********************************
-    String cadConexion="jdbc:postgresql://localhost:5432/dbfogon";
+    String cadConexion="jdbc:postgresql://localhost:5432/fogon";
     String pgUser="postgres";
-    String pgContra="123";
+    String pgContra="admin";
     
     
      public Conect() {

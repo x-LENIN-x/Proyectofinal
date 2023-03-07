@@ -24,9 +24,11 @@ public class Usuario_bd extends Usuario_mb {
     public Usuario_bd() {
     }
 
-    public Usuario_bd(String cedula, String usuario, String password, int codigo_rol, String estado) {
-        super(cedula, usuario, password, codigo_rol, estado);
+    public Usuario_bd(int codigo, String usuario, String password, int codigo_rol, String estado, String cedula_persona) {
+        super(codigo, usuario, password, codigo_rol, estado, cedula_persona);
     }
+
+    
 
     public List<Usuario_mb> mostrardatos() {
 
@@ -37,12 +39,12 @@ public class Usuario_bd extends Usuario_mb {
             while (rs.next()) {
 
                 Usuario_mb user = new Usuario_mb();
-                user.setCedula(rs.getString("cedula"));
+                user.setCodigo(rs.getInt("codigo"));
                 user.setUsuario(rs.getString("usuario"));
                 user.setPassword(rs.getString("password"));
                 user.setCodigo_rol(rs.getInt("codigo_rol"));
                 user.setEstado(rs.getString("estado"));
-
+                user.setCedula_persona(rs.getString("cedula_persona"));
                 lista.add(user);
             }
             rs.close();
@@ -54,13 +56,14 @@ public class Usuario_bd extends Usuario_mb {
     }//Fin mostrar datos
 
     public boolean insertar() {
-        String sql = "INSERT INTO usuario(cedula,usuario,password,codigo_rol,estado)"
+        String sql = "INSERT INTO usuario(codigo,usuario,password,codigo_rol,estado,cedula_persona)"
                 + "VALUES ('"
-                + getCedula() + "','"
+                + getCodigo() + "','"
                 + getUsuario() + "','"
                 + getPassword() + "','"
                 + getCodigo_rol() + "','"
-                + getEstado() + "')";
+                + getEstado()+ "','"
+                + getCedula_persona() + "')";
 
         if (conectar.noQuery(sql) == null) {
             return true;
@@ -70,14 +73,15 @@ public class Usuario_bd extends Usuario_mb {
         }
     }//Fin de insertar
 
-    public boolean modificar(String cedula) {
+    public boolean modificar(int cedula) {
         String sql = "Update usuario set "
-                + "cedula = '" + getCedula() + "', "
+                + "codigo = '" + getCodigo() + "', "
                 + "usuario = '" + getUsuario() + "', "
                 + "password = '" + getPassword() + "', "
                 + "codigo_rol = '" + getCodigo_rol() + "', "
-                + "estado = '" + getEstado() + "' "
-                + " Where cedula = '" + getCedula() + "'";
+                 + "estado = '" + getEstado() + "', "
+                + "cedula_persona = '" + getCedula_persona() + "' "
+                + " Where codigo = '" + getCodigo() + "'";
 
         if (conectar.noQuery(sql) == null) {
             return true;
@@ -87,8 +91,8 @@ public class Usuario_bd extends Usuario_mb {
         }
     }//Fin del modificar
 
-    public boolean eliminar(String cedula) {
-        String nsql = "Delete from usuario Where cedula = '" + cedula + "'";
+    public boolean eliminar(int codigo) {
+        String nsql = "Delete from usuario Where codigo = '" + codigo + "'";
         if (conectar.noQuery(nsql) == null) {
             return true;
         } else {
@@ -98,32 +102,33 @@ public class Usuario_bd extends Usuario_mb {
     }//Fin de eliminar
 
     public boolean verificarExistente(String cedula) {
+        return false;
 
-        try {
-            List<Usuario_mb> lista = new ArrayList<>();
-            String sql = "SELECT * FROM usuario where cedula= '" + cedula + "'";
-            ResultSet rs = conectar.query(sql);
-            while (rs.next()) {
-
-                  Usuario_mb user = new Usuario_mb();
-                user.setCedula(rs.getString("cedula"));
-                user.setUsuario(rs.getString("usuario"));
-                user.setPassword(rs.getString("password"));
-                user.setCodigo_rol(rs.getInt("codigo_rol"));
-                user.setEstado(rs.getString("estado"));
-
-                lista.add(user);
-            }
-            rs.close();
-            if (lista.isEmpty()) {
-                return false;
-            } else {
-                return true;
-            }
-        } catch (SQLException e) {
-            Logger.getLogger(Usuario_bd.class.getName()).log(Level.SEVERE, null, e);
-            return false;
-        }
+//        try {
+//            List<Usuario_mb> lista = new ArrayList<>();
+//            String sql = "SELECT * FROM usuario where cedula= '" + cedula + "'";
+//            ResultSet rs = conectar.query(sql);
+//            while (rs.next()) {
+//
+//                  Usuario_mb user = new Usuario_mb();
+//                user.setCedula(rs.getString("cedula"));
+//                user.setUsuario(rs.getString("usuario"));
+//                user.setPassword(rs.getString("password"));
+//                user.setCodigo_rol(rs.getInt("codigo_rol"));
+//                user.setEstado(rs.getString("estado"));
+//
+//                lista.add(user);
+//            }
+//            rs.close();
+//            if (lista.isEmpty()) {
+//                return false;
+//            } else {
+//                return true;
+//            }
+//        } catch (SQLException e) {
+//            Logger.getLogger(Usuario_bd.class.getName()).log(Level.SEVERE, null, e);
+//            return false;
+//        }
 
     }
 

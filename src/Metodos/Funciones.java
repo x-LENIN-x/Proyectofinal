@@ -3,16 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Main;
-import vista.*;
-import controlador.*;
+package Metodos;
+ import java.util.UUID;
+
 /**
  *
  * @author PC
  */
-public class Main {
-    public static void main(String[] args) {
-        V_inicio v=new V_inicio();
-        C_inicio c=new C_inicio(v);
+public class Funciones {
+   
+
+    public static int generateUniqueId() {
+        UUID uuid = UUID.randomUUID();
+        return Math.abs(uuid.hashCode());
     }
+
 }

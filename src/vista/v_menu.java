@@ -18,6 +18,16 @@ public class v_menu extends javax.swing.JFrame {
      initComponents();
     }
 
+    public JMenuItem getLinkNuevoEmpleado() {
+        return linkNuevoEmpleado;
+    }
+
+    public void setLinkNuevoEmpleado(JMenuItem linkNuevoEmpleado) {
+        this.linkNuevoEmpleado = linkNuevoEmpleado;
+    }
+    
+    
+
     public JMenuItem getLink_nuevousuario() {
         return link_nuevousuario;
     }
@@ -83,6 +93,8 @@ public class v_menu extends javax.swing.JFrame {
         jMenu6 = new javax.swing.JMenu();
         jMenu8 = new javax.swing.JMenu();
         jMenu13 = new javax.swing.JMenu();
+        linkNuevoEmpleado = new javax.swing.JMenuItem();
+        jMenu1 = new javax.swing.JMenu();
         link_salir = new javax.swing.JMenu();
 
         jMenu3.setText("jMenu3");
@@ -164,8 +176,20 @@ public class v_menu extends javax.swing.JFrame {
         jMenu8.setText("Clientes");
         jMenuBar1.add(jMenu8);
 
-        jMenu13.setText("Empleados");
+        jMenu13.setText("Personal");
+
+        linkNuevoEmpleado.setText("Nuevo empleado");
+        linkNuevoEmpleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                linkNuevoEmpleadoActionPerformed(evt);
+            }
+        });
+        jMenu13.add(linkNuevoEmpleado);
+
         jMenuBar1.add(jMenu13);
+
+        jMenu1.setText("Pedidos");
+        jMenuBar1.add(jMenu1);
 
         link_salir.setText("Salir");
         jMenuBar1.add(link_salir);
@@ -198,10 +222,15 @@ public class v_menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_link_rolusuarioActionPerformed
 
+    private void linkNuevoEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_linkNuevoEmpleadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_linkNuevoEmpleadoActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu aaaa;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
@@ -222,6 +251,7 @@ public class v_menu extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
+    private javax.swing.JMenuItem linkNuevoEmpleado;
     private javax.swing.JMenuItem link_nuevousuario;
     private javax.swing.JMenuItem link_rolusuario;
     private javax.swing.JMenu link_salir;
